@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center; margin-top: 100px;" id="heading">Select your address</h1>
+    <div style="display: flex; justify-content: center;">
+      <label>Country: </label>
+    <select style="margin-right: 10px; margin-left: 10px;"  name="coutries" id="countries" onchange="updateValuesState()" required> </select>
+    </br> <label>State: </label>
+    <select style="margin-right: 10px; margin-left: 10px;" name="states" id="states" onchange="updateValuesCity()" required> </select>
+    </br> <label>City: </label>
+    <select style="margin-right: 10px; margin-left: 10px;" name="cities" id="cities" ononchange="updateValuesCity()" onblur="updateValuesCity()" required> </select>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
